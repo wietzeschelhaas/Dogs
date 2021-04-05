@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/DogCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    android:layout_margin="10dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_dog_card"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:id="@+id/text_title_dog_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp">
+
+        </androidx.appcompat.widget.AppCompatCheckedTextView>
+
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:id="@+id/text_description_dog_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample Description"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp">
+
+        </androidx.appcompat.widget.AppCompatCheckedTextView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
